@@ -35,7 +35,7 @@ const getAllFood = async (req, res, next) => {
 
   try {
     const foodaData = await food.find()
-    res.status(200).json({ foodaData })
+    res.status(200).json(foodaData)
     next()
 
 
