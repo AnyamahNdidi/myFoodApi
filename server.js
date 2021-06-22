@@ -32,9 +32,9 @@ app.use("/api/food", imageUpload)
 app.use("/api", myrouter)
 
 app.get("/", (req, res) => {
-  res.status(200).send("api is readyconsumtions")
+  res.status(200).send("api is ready to consumtions")
 })
 
 app.listen(port, () => {
-  console.log("this is the port im using")
+  console.log("this is the port im using bet port")
 })
