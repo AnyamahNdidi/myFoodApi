@@ -53,6 +53,13 @@ const getFoodbyId = async (req, res) => {
 
 }
 
+const deleteFoodId = async (req, res) => {
+
+  const foodDeleteId = await food.findByIdAndDelete(req.body.id)
+  res.json({ foodDeleteId })
+
+}
+
 
 const getallFood = (req, res) => {
 
@@ -63,5 +70,6 @@ module.exports = {
   imageUpload,
   getAllFood,
   getFoodbyId,
+  deleteFoodId
 }
 
